@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+#nav {
+    z-index: 1;
+    position: absolute;
+}
+ul {
+    list-style-type: none;
+    width: 110px;
+    background-color: black;
+    position: fixed;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 30px 15px;
+    text-decoration: none;
+    text-align: center;
+    height: 35px;
+}
+li a:hover{
+    cursor: pointer;
+    background-color:green;
+    font-weight: bold;
+}
+li a.active {
+    background-color: #58257b;
+    font-weight: bold;
+    color: white; 
+}
+li a:hover:not(.active) {
+    background-color: #db7093;
+    font-weight: bold;
+    color: white;
+}
+/* .ti-angle-down {
+    
+
+} */
+#content {
+    background-image: url("../img/cover_img.jpg");
+    width: 100%;
+    height: 650px;
+    position: relative;
+    text-align: center;
+}
+#content .income {
+    display: block;
+    margin: auto 0;
+    position: relative;
+    margin-left: 110px;
+}
+#content .income .container {
+    position: absolute;
+    left: 30%;
+    padding-top: 200px;
+}
+#content .income .container h1{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#content .income .container p {
+    font-size: 28px;
+}
+/* #content .income .container .overlay{
+    background-color: cyan;
+} */
